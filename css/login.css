@@ -1,0 +1,293 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+  --blue:#24305e;
+  --peach:#f76c6c;
+  --lightblue:#a8d0e6;
+  --darkblue:#374785;
+  --lightpink:##eaafc8;
+  --violet: #654ea3;
+
+  /*--gradient:linear-gradient(90deg, var(--violet), var(--pink));
+--gradient: linear-gradient(0deg, rgba(36,48,94,1) 0%, rgba(247,108,108,1) 100%);
+  --gradient:linear-gradient(0deg, var(--blue), var(--peach));
+  --gradient:linear-gradient(0deg, var(--violet), var(--lightpink));*/
+
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background: #ff9a9e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #ff9a9e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #ff9a9e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-container{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-container > h1{
+    font-size: 3vw;
+    color:#ffffff;
+}
+.left-container > p{
+    font-size: 1vw;
+    color:#ffffff;
+}
+.left-container-image{
+width: 30vw;
+}
+.right-container{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 60%;
+    /*width: 100%;*/
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+   /* height: 480px; right form height*/
+    width: 200%;
+    transition: height 0.2s ease;
+}
+.container .forms h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    color: #0047AB;
+}
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+/*
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms{
+    height: 600px;
+}*/
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+/*.alert {
+    padding: 10px;
+    border: 1px solid #c00;
+    background-color: #f44336; 
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+}*/
+
+/* Style specific to the "alert-danger" class */
+/*.alert.alert-danger {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}*/
+
+/*.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #f76c6c;
+    border-radius: 25px;
+}
+    outline: none;
+
+border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+*/
+.right-container form .alert{
+    margin:10px 0;
+    display: block;
+    background: blue;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgba(137, 207, 240, 0.2);
+    transition: all 0.2s ease;
+}
+
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #f76c6c;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0047AB;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #6495ED;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.input-field i.showHideRpw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: #6495ED;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    color: #6495ED;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #0047AB;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+  background:#6495ED;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .container{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .left-container > h1{
+        display: none;
+    }
+    .left-container > p{
+        display: none;
+    }
+    .left-container{
+        width: 100%;
+        height: auto;
+    }
+    .right-container{
+        width: 100%;
+        height: auto;
+    }
+}

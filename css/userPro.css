@@ -1,0 +1,571 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --blue:#FB7A8F;
+  --peach:#F76C6C;
+  /*--gradient:linear-gradient(90deg, var(--violet), var(--pink));
+--gradient: linear-gradient(0deg, rgba(36,48,94,1) 0%, rgba(247,108,108,1) 100%);*/
+  --gradient:linear-gradient(0deg, var(--blue), var(--peach));
+
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  /*text-transform: capitalize;*/
+  transition: all .2s ease-out;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#fff;
+  border-radius: 5rem;
+}
+
+body{
+  padding:3rem 7%;
+  background-image: white;
+
+}
+
+body::before,
+body::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+}
+body::before{
+  clip-path: circle(30% at left 20%);
+  opacity: 0.4;
+  background-image: linear-gradient( 135deg, #F76C6C 40%, #ff9a9e 100%);
+}
+body::after{
+  opacity: 0.4;
+  clip-path: circle(35% at right 20%);
+  background-image: linear-gradient( 135deg, #F76C6C 40%, #ff9a9e 100%);
+}
+
+section{
+  padding:2rem 7%;
+}
+
+.container1{
+    background:white;
+  height: auto;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: auto;
+  position: relative;
+}
+.container{
+height: 100rem;
+}
+
+.heading{
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:.8rem 3rem;
+  border-radius: .5rem;
+  background:#333;
+  color:#fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:var(--gradient);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding:2rem 7%;
+  position: relative;
+  z-index: 1000;
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:var(--blue);
+  font-weight: bold;
+}
+
+header .logo span{
+  color:var(--peach);
+}
+
+/*header .navbar a{
+  margin-left: 2rem;
+  font-size: 2rem;
+  color:#333;
+}
+
+header .navbar a:hover{
+  color:var(--pink);
+}
+*/
+#menu{
+  font-size: 2.5rem;
+  padding:.5rem 1rem;
+  border-radius: .3rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  cursor: pointer;
+  display: none;
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.home .content{
+  flex:1 1 40rem;
+}
+
+.home .image{
+  flex:1 1 40rem;
+}
+
+.home .image img{
+  width:100%;
+}
+
+.home .content h3{
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 4rem;
+}
+
+.home .content p{
+  padding:.5rem 0;
+  font-size: 1.7rem;
+  color:#666;
+}
+
+
+
+
+Navbar container1
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+} 
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown1 {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown1 .dropbtn1 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+} */
+header .navbar a:hover, .dropdown1:hover .dropbtn1{
+  color:var(--peach);
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content1 a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+/*
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}*/
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+}
+
+/*Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+    justify-content: center; /* Center the cards horizontally */
+  align-items: center;
+}
+.main-skills .card{
+  width: 50%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card h3{
+  margin: 10px;
+      font-size: 25px;
+
+}
+.main-skills .card p{
+  font-size: 22px;
+        color:#f76c6c;
+
+}
+.main-skills .card button{
+  background: orangered;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: rgba(223, 70, 15, 0.856);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Courses */
+.main-course{
+  margin-top:20px ;
+  /*text-transform: capitalize;*/
+}
+
+.course-box{
+  width: 100%;
+  height: 300px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 33%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.course-box .course .box h3{
+ color: black;
+}
+.box button{
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.box button:hover{
+  background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+*/
+
+
+/* footer section*/
+
+
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  background-color: #24305e;
+  color: #ffffff;
+  border-radius: 350px 0 0 0;
+  padding-top: 145px;
+  padding-left: 110px;
+  padding-bottom: 100px;
+  
+}
+
+.footer .box-container .box1{
+  flex:1 1 20rem;
+  
+}
+
+.footer .box-container .box1 h3{
+  font-size: 2.5rem;
+  color:#fff;
+  padding:.7rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.footer .box-container .box1 p{
+  font-size: 1.5rem;
+  color:#fff;
+  padding:.7rem 0;
+  padding-left: 100px;
+}
+
+.footer .box-container .box1 a{
+  display: block;
+  font-size: 1.5rem;
+  color:#fff;
+  padding:.7rem 0;
+  padding-left: 100px;
+
+}
+
+.footer .box-container .box1 a:hover{
+  color:var(--peach);
+}
+
+.footer .box-container .box1 p i{
+  padding-right: .5rem;
+  color:var(--peach);
+}
+
+.footer .credit{
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding:1rem;
+  padding-top: 2rem;
+  text-align: center;
+  color:#666;
+}
+
+.footer .credit span{
+  color:var(--peach);
+}
+
+
+
+
+
+/* Card */
+.card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+      width: auto;
+
+}
+
+.card-header,
+.card-footer {
+  border-color: #ebeef4;
+  background-color: #fff;
+  color: #798eb3;
+  padding: 15px;
+}
+
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-title span {
+  color: #899bbd;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-body {
+  padding: 0 20px 20px 20px;
+}
+
+.card-img-overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.progress{
+    width:auto;
+}
+/*.progress-bar{
+    height: 22px;
+}
+.progress-bar{
+    font-size: 22px;
+}*/
+
+/* Bordered Tabs */
+.nav-tabs-bordered {
+  border-bottom: 2px solid #ebeef4;
+}
+
+.nav-tabs-bordered .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+}
+
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+  color: #4154f1;
+}
+
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: #4154f1;
+  border-bottom: 2px solid #4154f1;
+}
+
+
