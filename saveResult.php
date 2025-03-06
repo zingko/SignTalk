@@ -6,7 +6,7 @@ if (isset($_SESSION['user'])) {
     // User is logged in
     $userID = $_SESSION['user']['userID'];
 } else {
-    // User is not logged in, use a temporary identifier (e.g., session ID)
+    // User is not logged in, use a temporary identifier
     $userID = session_id();
 }
 
